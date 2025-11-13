@@ -61,13 +61,13 @@ public class Main {
         if (place > 102) {
             System.out.println("Вагон уже полностью забит");
         }
-        int One = 1;
-        int Two = 2;
-        int Three = 3;
-        if (One < Two) {
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        if (one < two) {
             System.out.println("Один меньше двух, один не самоее большое число");
         }
-        if (Two < Three) {
+        if (two < three) {
             System.out.println("Два меньше трех, два не саме большое число");
         } else {
             System.out.println("Три самое большое число");
