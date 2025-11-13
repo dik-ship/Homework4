@@ -39,7 +39,7 @@ public class Main {
             System.out.println("Если возраст человека равен " + Age + ", то его место в университете.");
         }
         if (Age > 24) {
-            System.out.println("А если возраст человека равен " + Age + ", то ему пора ходить на работу.");
+            System.out.println("Eсли возраст человека равен " + Age + ", то ему пора ходить на работу.");
         }
         int ageKids = 16;
         if (ageKids < 5) {
