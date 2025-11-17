@@ -28,34 +28,36 @@ public class Main {
         } else {
             System.out.println("Если скорость равна " + speed + ", то можно ездить спокойно ");
         }
-        int Age = 89;
-        if (Age >= 2 || Age <= 6) {
-            System.out.println("Если возраст человека равен " + Age + ", то ему нужно ходить в детский сад");
+        int ageMan = 89;
+        if (ageMan >= 2 && ageMan <= 6) {
+            System.out.println("Если возраст человека равен " + ageMan + ", то ему нужно ходить в детский сад");
         }
-        if (Age > 7 || Age < 17) {
-            System.out.println("Если возраст человека равен " + Age + ", то ему нужно ходить в школу");
+        if (ageMan > 7 && ageMan < 17) {
+            System.out.println("Если возраст человека равен " + ageMan + ", то ему нужно ходить в школу");
         }
-        if (Age >= 18 || Age <= 24) {
-            System.out.println("Если возраст человека равен " + Age + ", то его место в университете.");
+        if (ageMan >= 18 && ageMan <= 24) {
+            System.out.println("Если возраст человека равен " + ageMan + ", то его место в университете.");
         }
-        if (Age > 24) {
-            System.out.println("Eсли возраст человека равен " + Age + ", то ему пора ходить на работу.");
+        if (ageMan > 24) {
+            System.out.println("Eсли возраст человека равен " + ageMan + ", то ему пора ходить на работу.");
         }
         int ageKids = 16;
         if (ageKids < 5) {
             System.out.println("Если возраст ребенка " + ageKids + ", то он не может кататься на аттракционе.");
         }
-        if (ageKids > 5 || ageKids <= 14) {
+        if (ageKids > 5 && ageKids <= 14) {
             System.out.println("Если возраст ребенка " + ageKids + ", то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
         }
         if (ageKids > 14) {
             System.out.println("Если возраст ребенка " + ageKids + ", то он может кататься без сопровождения взрослого.");
         }
+        int capacity = 102;
+        int sedentary = 60;
         int place = 3;
-        if  (place >= 1 || place <= 60) {
+        if  (place >= 1 && place <= 60) {
             System.out.printf("В вагоне есть сидячие места");
         }
-        if (place > 60 || place <= 102) {
+        if (place > 60 && place <= 102) {
             System.out.println("В вагоне есть стоячие места");
         }
         if (place > 102) {
@@ -64,11 +66,11 @@ public class Main {
         int one = 1;
         int two = 2;
         int three = 3;
-        if (one < two) {
-            System.out.println("Один меньше двух, один не самоее большое число");
+        if (one < two || one < three) {
+            System.out.println("Один меньше двух и один меньше трех, один не самоее большое число");
         }
-        if (two < three) {
-            System.out.println("Два меньше трех, два не саме большое число");
+        if (two > one || two < three) {
+            System.out.println("Два меньше трех, два не самое большое число");
         } else {
             System.out.println("Три самое большое число");
         }
