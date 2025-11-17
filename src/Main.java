@@ -54,7 +54,7 @@ public class Main {
         int capacity = 102;
         int sedentary = 60;
         int place = 3;
-        if  (place >= 1 && place <= 60) {
+        if (place >= 1 && place <= 60) {
             System.out.printf("В вагоне есть сидячие места");
         }
         if (place > 60 && place <= 102) {
@@ -66,15 +66,19 @@ public class Main {
         int one = 1;
         int two = 2;
         int three = 3;
-        if (one < two || one < three) {
-            System.out.println("Один меньше двух и один меньше трех, один не самоее большое число");
+        if (one < two && one < three) {
+            System.out.println("Это самое маленькое число");
         }
-        if (two > one || two < three) {
-            System.out.println("Два меньше трех, два не самое большое число");
-        } else {
-            System.out.println("Три самое большое число");
-        }
+        if (two > one && two < three) {
+            System.out.println("Это среднее число");
+            {
+            }
+            if (three > one && three > two) {
+                System.out.println("Это самое большое число");
+            }
         }
     }
+}
+
 
 
