@@ -66,16 +66,10 @@ public class Main {
         int one = 1;
         int two = 2;
         int three = 3;
-        if (one < two && one < three) {
-            System.out.println("Это самое маленькое число");
-        }
-        if (two > one && two < three) {
-            System.out.println("Это среднее число");
-            {
-            }
-            if (three > one && three > two) {
-                System.out.println("Это самое большое число");
-            }
+        if (one < two && one < three && two > one && two < three && three > one && three > two ) {
+            System.out.println("Это самое большое число");
+        } else {
+            System.out.println("Это не самое большое число число");
         }
     }
 }
