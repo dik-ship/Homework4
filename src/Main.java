@@ -53,7 +53,7 @@ public class Main {
         }
         int capacity = 102;
         int sedentary = 60;
-        int place = 3;
+        int place = 78;
         if (place >= 1 && place <= 60) {
             System.out.printf("В вагоне есть сидячие места");
         }
@@ -63,13 +63,15 @@ public class Main {
         if (place > 102) {
             System.out.println("Вагон уже полностью забит");
         }
-        int one = 1;
-        int two = 2;
-        int three = 3;
-        if (one < two && one < three && two > one && two < three && three > one && three > two ) {
-            System.out.println("Это самое большое число");
-        } else {
-            System.out.println("Это не самое большое число число");
+        int one = 57;
+        int two = 14;
+        int three = 12;
+        if (one > two && one > three) {
+            System.out.println("Число one самое большое");
+        } else if (two > one && two > three) {
+            System.out.println("Число two самое большое");
+        } else if (three > one && three > two) {
+            System.out.println("Число three самое большое");
         }
     }
 }
