@@ -28,18 +28,18 @@ public class Main {
         } else {
             System.out.println("Если скорость равна " + speed + ", то можно ездить спокойно ");
         }
-        int Age = 89;
-        if (Age >= 2 && Age <= 6) {
-            System.out.println("Если возраст человека равен " + Age + ", то ему нужно ходить в детский сад");
+        int ageMan = 89;
+        if (ageMan >= 2 && ageMan <= 6) {
+            System.out.println("Если возраст человека равен " + ageMan + ", то ему нужно ходить в детский сад");
         }
-        if (Age > 7 && Age < 17) {
-            System.out.println("Если возраст человека равен " + Age + ", то ему нужно ходить в школу");
+        if (ageMan > 7 && ageMan < 17) {
+            System.out.println("Если возраст человека равен " + ageMan + ", то ему нужно ходить в школу");
         }
-        if (Age >= 18 && Age <= 24) {
-            System.out.println("Если возраст человека равен " + Age + ", то его место в университете.");
+        if (ageMan >= 18 && ageMan <= 24) {
+            System.out.println("Если возраст человека равен " + ageMan + ", то его место в университете.");
         }
-        if (Age > 24) {
-            System.out.println("А если возраст человека равен " + Age + ", то ему пора ходить на работу.");
+        if (ageMan > 24) {
+            System.out.println("Eсли возраст человека равен " + ageMan + ", то ему пора ходить на работу.");
         }
         int ageKids = 16;
         if (ageKids < 5) {
@@ -51,8 +51,10 @@ public class Main {
         if (ageKids > 14) {
             System.out.println("Если возраст ребенка " + ageKids + ", то он может кататься без сопровождения взрослого.");
         }
-        int place = 3;
-        if  (place >= 1 && place <= 60) {
+        int capacity = 102;
+        int sedentary = 60;
+        int place = 78;
+        if (place >= 1 && place <= 60) {
             System.out.printf("В вагоне есть сидячие места");
         }
         if (place > 60 && place <= 102) {
@@ -61,19 +63,18 @@ public class Main {
         if (place > 102) {
             System.out.println("Вагон уже полностью забит");
         }
-        int one = 1;
-        int two = 2;
-        int three = 3;
-        if (one < 2) {
-            System.out.println("Один меньше двух и трех");
-        }
-        if (two > 1 && two <3 ) {
-            System.out.println("Два больше одного, но меньше 3");
-        }
-        if (three > 2) {
-            System.out.println("Три больше двух");
-        }
+        int one = 57;
+        int two = 14;
+        int three = 12;
+        if (one > two && one > three) {
+            System.out.println("Число one самое большое");
+        } else if (two > one && two > three) {
+            System.out.println("Число two самое большое");
+        } else if (three > one && three > two) {
+            System.out.println("Число three самое большое");
         }
     }
+}
+
 
 
